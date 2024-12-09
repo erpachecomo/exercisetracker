@@ -63,7 +63,7 @@ app.post("/api/users/:id/exercises", async function (req, res) {
       description: newExercise.description,
       duration: newExercise.duration,
       date: newExercise.date.toDateString(),
-      _id: newExercise._id,
+      _id: userId,
     });
   } catch (err) {
     console.error(err);
