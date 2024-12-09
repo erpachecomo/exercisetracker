@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 const cors = require("cors");
-const { Exercise, User } = require("./mongoose");
+const { Exercise, User } = require(__dirname + "/mongoose");
 require("dotenv").config();
 app.use(cors());
 app.use(express.urlencoded({ extended: true }));
